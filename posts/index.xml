@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2022 21:33:19 +0800</lastBuildDate><atom:link href="https://tiukenywil11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 13:14:17 +0800</lastBuildDate><atom:link href="https://tiukenywil11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project Idea (Decentralized Portfolio)</title>
+      <link>https://tiukenywil11.github.io/posts/1_project_idea/</link>
+      <pubDate>Thu, 28 Apr 2022 13:14:17 +0800</pubDate>
+      
+      <guid>https://tiukenywil11.github.io/posts/1_project_idea/</guid>
+      <description>Introduction  A little background about myself. I have always been fond of creating websites, and having my own place or brand in the internet. I have developed front end UI and UX in the past using ReactJS, and Angular when they were just starting out. Most of my projects are kept in a private repository on Bitbucket, they are still there but at this point in time I have forgotten how to customize them (poor documentation on my part).</description>
+    </item>
+    
     <item>
       <title>Introduction</title>
       <link>https://tiukenywil11.github.io/posts/introduction/</link>

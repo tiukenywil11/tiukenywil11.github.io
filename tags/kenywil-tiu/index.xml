@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>kenywil tiu on Kenywil Tiu Blog</title>
-    <link>https://tiukenywil11.github.io/tags/kenywil-tiu/</link>
+    <link>https://www.kenywil.com/tags/kenywil-tiu/</link>
     <description>Recent content in kenywil tiu on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2022 21:33:19 +0800</lastBuildDate><atom:link href="https://tiukenywil11.github.io/tags/kenywil-tiu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Apr 2022 21:33:19 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/kenywil-tiu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://tiukenywil11.github.io/posts/introduction/</link>
+      <link>https://www.kenywil.com/posts/introduction/</link>
       <pubDate>Tue, 26 Apr 2022 21:33:19 +0800</pubDate>
       
-      <guid>https://tiukenywil11.github.io/posts/introduction/</guid>
+      <guid>https://www.kenywil.com/posts/introduction/</guid>
       <description>Brief introduction on Kenywil Tiu, full stack developer, and a blockchain enthusiast</description>
     </item>
     

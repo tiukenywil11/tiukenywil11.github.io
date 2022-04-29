@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tiukenywil11.github.io/tags/blockchain/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
+    <loc>https://tiukenywil11.github.io/tags/decentralized-portfolio/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://tiukenywil11.github.io/tags/full-stack/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/javascript/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/posts/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/project-idea-1/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/posts/project-idea-1-part-1/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/reactjs/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/</loc>
+    <lastmod>2022-04-29T16:28:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/blockchain/</loc>
     <lastmod>2022-04-28T13:14:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -17,27 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://tiukenywil11.github.io/tags/kenywil-tiu/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tiukenywil11.github.io/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tiukenywil11.github.io/posts/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tiukenywil11.github.io/posts/1_project_idea/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tiukenywil11.github.io/tags/reactjs/</loc>
+    <loc>https://tiukenywil11.github.io/posts/project-idea-1-introduction/</loc>
     <lastmod>2022-04-28T13:14:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -48,11 +68,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://tiukenywil11.github.io/tags/smart-contract/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tiukenywil11.github.io/tags/</loc>
     <lastmod>2022-04-28T13:14:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,6 +88,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://tiukenywil11.github.io/posts/introduction/</loc>
+    <lastmod>2022-04-26T21:33:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tiukenywil11.github.io/tags/kenywil-tiu/</loc>
     <lastmod>2022-04-26T21:33:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

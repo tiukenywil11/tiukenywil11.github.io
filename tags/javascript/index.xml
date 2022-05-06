@@ -6,7 +6,16 @@
     <description>Recent content in javascript on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2022 14:26:18 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 23:10:39 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upskill 1: Nodejs</title>
+      <link>https://www.kenywil.com/posts/upskill-1-nodejs/</link>
+      <pubDate>Fri, 06 May 2022 23:10:39 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/posts/upskill-1-nodejs/</guid>
+      <description>Upskill 1: Research on backend Javascript framework NodeJS</description>
+    </item>
+    
     <item>
       <title>Project Idea 1 (Decentralized Portfolio): Part 4</title>
       <link>https://www.kenywil.com/posts/project-idea-1-part-4/</link>

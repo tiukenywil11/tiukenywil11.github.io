@@ -6,20 +6,11 @@
     <description>Recent content in Tags on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2022 14:26:18 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>decentralized portfolio</title>
-      <link>https://www.kenywil.com/tags/decentralized-portfolio/</link>
-      <pubDate>Mon, 02 May 2022 14:26:18 +0800</pubDate>
-      
-      <guid>https://www.kenywil.com/tags/decentralized-portfolio/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 06 May 2022 23:10:39 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>full stack</title>
       <link>https://www.kenywil.com/tags/full-stack/</link>
-      <pubDate>Mon, 02 May 2022 14:26:18 +0800</pubDate>
+      <pubDate>Fri, 06 May 2022 23:10:39 +0800</pubDate>
       
       <guid>https://www.kenywil.com/tags/full-stack/</guid>
       <description></description>
@@ -28,9 +19,36 @@
     <item>
       <title>javascript</title>
       <link>https://www.kenywil.com/tags/javascript/</link>
-      <pubDate>Mon, 02 May 2022 14:26:18 +0800</pubDate>
+      <pubDate>Fri, 06 May 2022 23:10:39 +0800</pubDate>
       
       <guid>https://www.kenywil.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://www.kenywil.com/tags/nodejs/</link>
+      <pubDate>Fri, 06 May 2022 23:10:39 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>upskill</title>
+      <link>https://www.kenywil.com/tags/upskill/</link>
+      <pubDate>Fri, 06 May 2022 23:10:39 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/tags/upskill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decentralized portfolio</title>
+      <link>https://www.kenywil.com/tags/decentralized-portfolio/</link>
+      <pubDate>Mon, 02 May 2022 14:26:18 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/tags/decentralized-portfolio/</guid>
       <description></description>
     </item>
     

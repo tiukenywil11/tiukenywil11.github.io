@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.kenywil.com/tags/expressjs/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
+    <loc>https://www.kenywil.com/tags/decentralized-portfolio/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kenywil.com/tags/full-stack/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/javascript/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/project-idea-1/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/project-idea-1-part-5/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/reactjs/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/</loc>
+    <lastmod>2022-05-09T11:44:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/expressjs/</loc>
     <lastmod>2022-05-07T11:41:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -17,32 +57,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/tags/javascript/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kenywil.com/tags/nodejs/</loc>
     <lastmod>2022-05-07T11:41:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/posts/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kenywil.com/tags/swagger/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/</loc>
     <lastmod>2022-05-07T11:41:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -62,22 +82,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/tags/decentralized-portfolio/</loc>
-    <lastmod>2022-05-02T14:26:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/project-idea-1/</loc>
-    <lastmod>2022-05-02T14:26:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kenywil.com/posts/project-idea-1-part-4/</loc>
-    <lastmod>2022-05-02T14:26:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/reactjs/</loc>
     <lastmod>2022-05-02T14:26:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Project Idea 1 (Decentralized Portfolio): Part 5 | Kenywil Tiu Blog</title>
+<meta name="keywords" content="project idea 1, decentralized portfolio, full stack, reactjs, javascript">
+<meta name="description" content="Part 5: Project idea to create a portfolio with decentrailized web3 technologies">
+<meta name="author" content="Kenywil Tiu">
+<link rel="canonical" href="https://www.kenywil.com/posts/project-idea-1-part-5/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.b4e19c453811e60acfec1f00c15ac2be1c53f6ab90187e684358ce7faaf48bab.css" integrity="sha256-tOGcRTgR5grP7B8AwVrCvhxT9quQGH5oQ1jOf6r0i6s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.kenywil.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kenywil.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kenywil.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.kenywil.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.kenywil.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Project Idea 1 (Decentralized Portfolio): Part 5" />
+<meta property="og:description" content="Part 5: Project idea to create a portfolio with decentrailized web3 technologies" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kenywil.com/posts/project-idea-1-part-5/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-09T11:44:06&#43;08:00" />
+<meta property="article:modified_time" content="2022-05-09T11:44:06&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project Idea 1 (Decentralized Portfolio): Part 5"/>
+<meta name="twitter:description" content="Part 5: Project idea to create a portfolio with decentrailized web3 technologies"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://www.kenywil.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Project Idea 1 (Decentralized Portfolio): Part 5",
+      "item": "https://www.kenywil.com/posts/project-idea-1-part-5/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Project Idea 1 (Decentralized Portfolio): Part 5",
+  "name": "Project Idea 1 (Decentralized Portfolio): Part 5",
+  "description": "Part 5: Project idea to create a portfolio with decentrailized web3 technologies",
+  "keywords": [
+    "project idea 1", "decentralized portfolio", "full stack", "reactjs", "javascript"
+  ],
+  "articleBody": "Introduction  On the previous blog, We have created a simple logo, then made a base “Sidebar” component. I encountered no problem with those. I will be resuming with the Youtube tutorial.\nSteps For this day I decided to start with programming the styles (scss) for the ‘Sidebar’ component. This would include some simple animations.\nResuming with ‘Sidebar’ component  Append the following file: ’tiukenywil11_portfolio/src/components/Sidebar/index.scss’.   Add style to ’nav-bar’ class.  .nav-bar { \tbackground: #000000; \twidth: 60px; \theight: 100%; \tposition: absolute; \ttop: 0; \tz-index: 3; \tmin-height: 500px; }  Inside ’nav-bar’ class, nest ’logo’ class.  .logo { \tdisplay: block; \tpadding: 8px 0; }  Inside ’logo’ class, , nset ‘img’ tag.  img { \tdisplay: block; \tmargin: 8px auto; \twidth: 24px; \theight: auto; }  Below ’logo’ class create ’nav’ tag style.  nav {  display: block;  text-align: center;  position: absolute;  height: 210px;  top: 50%;  margin-top: -120px;  width: 100%; }  Inside ’nav’ class, nest ‘a’ tag.  a { \tfont-size: 22px; \tcolor: #ffffff; \tdisplay: block; \tline-height: 51px; \theight: 51px; \tposition: relative; \ttext-decoration: none; }  Inside ‘a’ tag, nest ‘i’ tag.  i { \ttransition: all 0.3s ease-out; }  Inside ‘a’ tag add ‘hover’ animation. (Added gray color upon hover)  \u0026:hover { \tcolor: #808080;  \tsvg { \topacity: 0; \t}  \t\u0026:after { \topacity: 1; \t} }  Inside ‘a’ tag, add animations on ‘after’.  \u0026:after { \tcontent: ''; \tfont-size: 9px; \tletter-spacing: 2px; \tposition: absolute; \tbottom: 0; \tdisplay: block; \twidth: 100%; \ttext-align: center; \topacity: 0; \t-webkit-transition: all 0.3s ease-out; \ttransition: all 0.3s ease-out; }  Below ‘a’ tag style, add color when button is active. (Added light gray color when active)  a.active { \tsvg { \tcolor: #d3d3d3; \t} }  Below ’nav’ class, add ‘ul’ tag style.  ul { \tposition: absolute; \tbottom: 20px; \twidth: 100%; \tdisplay: block; \tpadding: 0; \tlist-style: none; \ttext-align: center; \tmargin: 0; }  Inside ‘ul’ tag, add empty ’li’ tag style.  li {  }  Inside ’li’ tag, add ‘a’ tag style.   a { \tpadding: 7px 0; \tdisplay: block; \tfont-size: 15px; \tline-height: 16px; \tcolor: #4d4d4e; }  Inside ‘a’ tag, add a ‘hover’ design. (Added gray color upon hover.  \u0026:hover {  color: #808080; } Append ’tiukenywil11_portfolio/src/components/Sidebar/index.js’.   Append import from ‘react-router-dom’. Add ‘NavLink’  import { Link, NavLink } from 'react-router-dom';  Import from ‘@fortawesome/react-fontawesome’.  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  Import icons from ‘@fortawesome/free-brands-svg-icons’.  import { \tfaLinkedin, \tfaGithub, } from '@fortawesome/free-brands-svg-icons';  Import icons from ‘@fortawesome/free-solid-svg-icons’.  import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'  Add ’nav’ tag below closing ‘Link’ tag.  nav  nav  Add ‘Navlink’ tag inside ’nav’  NavLink exact=\"true\" activeclassname=\"active\" to=\"/\" NavLink  Add ‘FontAwesomeIcon’ tag inside ‘NavLink’ tags.  FontAwesomeIcon icon={faHome} color=\"#ffffff\" /  Duplicate 2 more times for ‘about’ and ‘contact’ links.  NavLink exact=\"true\" activeclassname=\"active\" className=\"about-link\" to=\"/about\" \tFontAwesomeIcon icon={faUser} color=\"#ffffff\" / NavLink  NavLink exact=\"true\" activeclassname=\"active\" className=\"contact-link\" to=\"/contact\" \tFontAwesomeIcon icon={faEnvelope} color=\"#ffffff\" / NavLink  Add ‘ul’ tag with ’li’ tag inside, below ’nav’ tag.  ul \tli \t\tli ul  Add ‘a’ tag inside’li’ tag. These will contains links to social media accounts.  a target=\"_blank\" rel=\"noreferrer\" href=\"https://www.linkedin.com/in/kenywil-tiu-0b6a4612b\" \tFontAwesomeIcon icon={faLinkedin} color=\"#ffffff\"/ a  Duplicate 1 more times for ‘github’ account.  li \ta target=\"_blank\" rel=\"noreferrer\" href=\"https://github.com/tiukenywil11\" \tFontAwesomeIcon icon={faGithub} color=\"#ffffff\"/ \ta li Append ’tiukenywil11_portfolio/src/components/Layout/index.js’.   Import ‘Sidebar’ component.  import Sidebar from '../Sidebar';  Add ‘Sidebar’ tag on ‘Layout’ component.  const Layout = () = { \treturn ( \tdiv\t\tSidebar/ \t/div \t) } Test if ReactJS app is workin.  npm start  The screen should look similar to this.   Outro  The progress I made today adds the ‘Sidebar’ component and its style. I had encountered a few problems when nesting the scss for ‘Sidebar’ component. I learned to simply model the nesting similar the HTML element.\nExample:\n HTML element  ul \tli \tdiv className=\"sample\"div \tli ul  SCSS element  ul { \t/* css for 'ul' tag */ \tli { \t/* css for 'li' tag */ \t.sample { \t/* css for 'sample' class */ \t} \t} } The changes can be found in my GitHub repository here.\nRead More:\nPrevious:\nDecentralized Portfolio: Introduction\nDecentralized Portfolio: Part 1\nDecentralized Portfolio: Part 2\nDecentralized Portfolio: Part 3\nDecentralized Portfolio: Part 4\n",
+  "wordCount" : "646",
+  "inLanguage": "en",
+  "datePublished": "2022-05-09T11:44:06+08:00",
+  "dateModified": "2022-05-09T11:44:06+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Kenywil Tiu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.kenywil.com/posts/project-idea-1-part-5/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kenywil Tiu Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.kenywil.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.kenywil.com" accesskey="h" title="Kenywil Tiu Blog (Alt + H)">Kenywil Tiu Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Project Idea 1 (Decentralized Portfolio): Part 5
+    </h1>
+    <div class="post-description">
+      Part 5: Project idea to create a portfolio with decentrailized web3 technologies
+    </div>
+    <div class="post-meta"><span title='2022-05-09 11:44:06 +0800 +08'>May 9, 2022</span>&nbsp;·&nbsp;Kenywil Tiu
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>       On the previous blog, We have created a simple logo, then made a base &ldquo;Sidebar&rdquo; component. I encountered no problem with those. I will be resuming with the <a href="https://youtu.be/bmpI252DmiI">Youtube tutorial</a>.</p>
+<h1 id="steps">Steps<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h1>
+<p>For this day I decided to start with programming the styles (scss) for the &lsquo;Sidebar&rsquo; component. This would include some simple animations.</p>
+<h2 id="resuming-with-sidebar-component">Resuming with &lsquo;Sidebar&rsquo; component<a hidden class="anchor" aria-hidden="true" href="#resuming-with-sidebar-component">#</a></h2>
+<ol>
+<li>Append the following file: <em>&rsquo;tiukenywil11_portfolio/src/components/Sidebar/index.scss&rsquo;</em>.</li>
+</ol>
+<ul>
+<li>Add style to &rsquo;nav-bar&rsquo; class.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">nav-bar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#000000</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">500</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &rsquo;nav-bar&rsquo; class, nest &rsquo;logo&rsquo; class.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">logo</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &rsquo;logo&rsquo; class, , nset &lsquo;img&rsquo; tag.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">img</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">height</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Below &rsquo;logo&rsquo; class create &rsquo;nav&rsquo; tag style.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">nav</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">210</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">-120</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &rsquo;nav&rsquo; class, nest &lsquo;a&rsquo; tag.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">a</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ffffff</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">51</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">51</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &lsquo;a&rsquo; tag, nest &lsquo;i&rsquo; tag.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">i</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">ease-out</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &lsquo;a&rsquo; tag add &lsquo;hover&rsquo; animation. (Added gray color upon hover)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#808080</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">svg</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&amp;</span>:<span style="color:#a6e22e">after</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><ul>
+<li>Inside &lsquo;a&rsquo; tag, add animations on &lsquo;after&rsquo;.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>:<span style="color:#a6e22e">after</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">letter-spacing</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">ease-out</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">ease-out</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Below &lsquo;a&rsquo; tag style, add color when button is active. (Added light gray color when active)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">a</span>.<span style="color:#a6e22e">active</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">svg</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#d3d3d3</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><ul>
+<li>Below &rsquo;nav&rsquo; class, add &lsquo;ul&rsquo; tag style.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">ul</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &lsquo;ul&rsquo; tag, add  empty &rsquo;li&rsquo; tag style.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">li</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &rsquo;li&rsquo; tag, add &lsquo;a&rsquo; tag style.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>  <span style="color:#f92672">a</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#4d4d4e</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Inside &lsquo;a&rsquo; tag, add a &lsquo;hover&rsquo; design. (Added gray color upon hover.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#808080</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="2">
+<li>Append <em>&rsquo;tiukenywil11_portfolio/src/components/Sidebar/index.js&rsquo;</em>.</li>
+</ol>
+<ul>
+<li>Append import from &lsquo;react-router-dom&rsquo;. Add &lsquo;NavLink&rsquo;</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Link</span>, <span style="color:#a6e22e">NavLink</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-router-dom&#39;</span>;
+</span></span></code></pre></div><ul>
+<li>Import from &lsquo;@fortawesome/react-fontawesome&rsquo;.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">FontAwesomeIcon</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@fortawesome/react-fontawesome&#39;</span>;
+</span></span></code></pre></div><ul>
+<li>Import icons from &lsquo;@fortawesome/free-brands-svg-icons&rsquo;.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">faLinkedin</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">faGithub</span>,
+</span></span><span style="display:flex;"><span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@fortawesome/free-brands-svg-icons&#39;</span>;
+</span></span></code></pre></div><ul>
+<li>Import icons from &lsquo;@fortawesome/free-solid-svg-icons&rsquo;.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">faHome</span>, <span style="color:#a6e22e">faUser</span>, <span style="color:#a6e22e">faEnvelope</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@fortawesome/free-solid-svg-icons&#39;</span>
+</span></span></code></pre></div><ul>
+<li>Add &rsquo;nav&rsquo; tag below closing &lsquo;Link&rsquo; tag.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Add &lsquo;Navlink&rsquo; tag inside &rsquo;nav&rsquo;</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">exact</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">activeclassname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">NavLink</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Add &lsquo;FontAwesomeIcon&rsquo; tag inside &lsquo;NavLink&rsquo; tags.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">FontAwesomeIcon</span> <span style="color:#a6e22e">icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">{faHome}</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ffffff&#34;</span> /&gt;
+</span></span></code></pre></div><ul>
+<li>Duplicate 2 more times for &lsquo;about&rsquo; and &lsquo;contact&rsquo; links.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">exact</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">activeclassname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about-link&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">FontAwesomeIcon</span> <span style="color:#a6e22e">icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">{faUser}</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ffffff&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">NavLink</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">exact</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">activeclassname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;contact-link&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/contact&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">FontAwesomeIcon</span> <span style="color:#a6e22e">icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">{faEnvelope}</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ffffff&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">NavLink</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Add &lsquo;ul&rsquo; tag with &rsquo;li&rsquo; tag inside, below &rsquo;nav&rsquo; tag.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Add &lsquo;a&rsquo; tag inside&rsquo;li&rsquo; tag. These will contains links to social media accounts.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;noreferrer&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.linkedin.com/in/kenywil-tiu-0b6a4612b&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">FontAwesomeIcon</span> <span style="color:#a6e22e">icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">{faLinkedin}</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ffffff&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Duplicate 1 more times for &lsquo;github&rsquo; account.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;noreferrer&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/tiukenywil11&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">FontAwesomeIcon</span> <span style="color:#a6e22e">icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">{faGithub}</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ffffff&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Append <em>&rsquo;tiukenywil11_portfolio/src/components/Layout/index.js&rsquo;</em>.</li>
+</ol>
+<ul>
+<li>Import &lsquo;Sidebar&rsquo; component.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Sidebar</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../Sidebar&#39;</span>;
+</span></span></code></pre></div><ul>
+<li>Add &lsquo;Sidebar&rsquo; tag on &lsquo;Layout&rsquo; component.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Layout</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>	
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Sidebar</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="4">
+<li>Test if ReactJS app is workin.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm start
+</span></span></code></pre></div><ul>
+<li>The screen should look similar to this.
+<img loading="lazy" src="/img/project-idea-1-part-5/1_screen-end.png" alt="screen-end"  />
+</li>
+</ul>
+<h1 id="outro">Outro<a hidden class="anchor" aria-hidden="true" href="#outro">#</a></h1>
+<p>       The progress I made today adds the &lsquo;Sidebar&rsquo; component and its style. I had encountered a few problems when nesting the scss for &lsquo;Sidebar&rsquo; component. I learned to simply model the nesting similar the HTML element.</p>
+<p>Example:</p>
+<ul>
+<li>HTML element</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sample&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><ul>
+<li>SCSS element</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">ul</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* css for &#39;ul&#39; tag */</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">li</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">/* css for &#39;li&#39; tag */</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#960050;background-color:#1e0010">.sample</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">/* css for &#39;sample&#39; class */</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><p>The changes can be found in my GitHub repository <a href="https://github.com/tiukenywil11/decentralized-portfolio/commit/26fb540de1ccd2f6756d496974160052db33e029">here</a>.</p>
+<p><strong>Read More:</strong><br>
+Previous:<br>
+<a href="https://www.kenywil.com/posts/project-idea-1-introduction/">Decentralized Portfolio: Introduction</a><br>
+<a href="https://www.kenywil.com/posts/project-idea-1-part-1/">Decentralized Portfolio: Part 1</a><br>
+<a href="https://www.kenywil.com/posts/project-idea-1-part-2/">Decentralized Portfolio: Part 2</a><br>
+<a href="https://www.kenywil.com/posts/project-idea-1-part-3/">Decentralized Portfolio: Part 3</a><br>
+<a href="https://www.kenywil.com/posts/project-idea-1-part-4/">Decentralized Portfolio: Part 4</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.kenywil.com/tags/project-idea-1/">project idea 1</a></li>
+      <li><a href="https://www.kenywil.com/tags/decentralized-portfolio/">decentralized portfolio</a></li>
+      <li><a href="https://www.kenywil.com/tags/full-stack/">full stack</a></li>
+      <li><a href="https://www.kenywil.com/tags/reactjs/">reactjs</a></li>
+      <li><a href="https://www.kenywil.com/tags/javascript/">javascript</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://www.kenywil.com">Kenywil Tiu Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

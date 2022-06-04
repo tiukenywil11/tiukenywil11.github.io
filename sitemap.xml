@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kenywil.com/tags/hardhat/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/smart-contract/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/solidity/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/upskill/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/</loc>
+    <lastmod>2022-06-04T13:19:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kenywil.com/tags/decentralized-portfolio/</loc>
     <lastmod>2022-05-22T11:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,16 +57,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/</loc>
-    <lastmod>2022-05-22T11:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/posts/</loc>
-    <lastmod>2022-05-22T11:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kenywil.com/tags/project-idea-1/</loc>
     <lastmod>2022-05-22T11:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,11 +68,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kenywil.com/tags/reactjs/</loc>
-    <lastmod>2022-05-22T11:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/</loc>
     <lastmod>2022-05-22T11:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -72,12 +97,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/tags/upskill/</loc>
-    <lastmod>2022-05-07T11:41:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/posts/upskill-1-nodejs-practical/</loc>
+    <loc>https://www.kenywil.com/posts/upskill-1-nodejs-swagger-practical/</loc>
     <lastmod>2022-05-07T11:41:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -123,11 +143,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kenywil.com/tags/rust/</loc>
-    <lastmod>2022-04-28T13:14:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/smart-contract/</loc>
     <lastmod>2022-04-28T13:14:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

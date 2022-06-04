@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup | Kenywil Tiu Blog</title>
+<meta name="keywords" content="upskill, hardhat, solidity, smart contract">
+<meta name="description" content="Upskill 2: Practical research on backend Solidity framework Hardhat">
+<meta name="author" content="Kenywil Tiu">
+<link rel="canonical" href="https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.b4e19c453811e60acfec1f00c15ac2be1c53f6ab90187e684358ce7faaf48bab.css" integrity="sha256-tOGcRTgR5grP7B8AwVrCvhxT9quQGH5oQ1jOf6r0i6s=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://www.kenywil.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kenywil.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kenywil.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.kenywil.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://www.kenywil.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup" />
+<meta property="og:description" content="Upskill 2: Practical research on backend Solidity framework Hardhat" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-04T13:19:39&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-04T13:19:39&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup"/>
+<meta name="twitter:description" content="Upskill 2: Practical research on backend Solidity framework Hardhat"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://www.kenywil.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Upskill 2 Part 1 (Hardhat): Concepts \u0026 Setup",
+      "item": "https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Upskill 2 Part 1 (Hardhat): Concepts \u0026 Setup",
+  "name": "Upskill 2 Part 1 (Hardhat): Concepts \u0026 Setup",
+  "description": "Upskill 2: Practical research on backend Solidity framework Hardhat",
+  "keywords": [
+    "upskill", "hardhat", "solidity", "smart contract"
+  ],
+  "articleBody": "Introduction  I some practical experience with Solidity already, and was recommended by one of my colleague to try to supplement my knowledge with the Hardhat framework. I checked it out and would like to try it out and create a basic working smart contract. I will be following the official document of Hardhat found here.\nHardhat Concepts  Hardhat is composed of the following concepts.\n Tasks: There are commands that can be ran on the terminal, some are provided by Hardhat upon install (e.g. npx hardhat compile). To find out the list of tasks use the following command:  npx hardhat help [task]  Plugins: Tools that can be integrated to Hardhat. Examples of these are ’ethers.js’ and ‘waffle’.  List of plugins can be found here: Hardhat Plugins    Steps Prerequisite  NodeJS 12+ NPM (Should have been installed with NodeJS)  Github Setup  I have created a new repository on my Github account, it can be found here. Opened Git bash, then used the following commands.   Cloned the repository to my local machine.  git clone https://github.com/tiukenywil11/hardhat-demo.git  Navigated to the project.  cd hardhat-demo  Opened project via VS Code.  code . Environment Setup  Open a terminal on VSCode using the following keyboard shortcut CTRL + SHIFT + ~. Install Hardhat dependencies using NPM (Node Package Manager).   Initialize a node project.  npm init  (Optional) Fill up the details after the command Install Hardhat to the dev environment (Inside project directory only).  npm install --save-dev hardhat Create a Hardhat config file.   Run the following command to run hardhat on terminal.  npx hardhat  Choose the option ‘Create an empty hardhat.config.js’. This will create a ‘hardhat.config.js’ on the same directory as your ‘package.json’.  Installing plugins  Install the following plugins.   Ethers.js: Used to help interact with the Ethereum blockchain. Waffle: Used to build smart contracts.  npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai Add Installed dependency on hardhat.config.js, this should be added on first line of the file. (Adding ‘Ethers.js’ is not necessary, because ‘Waffle’ already calls ‘Ethers.js’)  require(\"@nomiclabs/hardhat-waffle\"); Saving changes to Github.  Commited changes to Github repository.  git add . git commit -m \"Part 1: Environment setup, and base hardhat config\" git push Outro  So with this, we have already set up the environment for Hardhat, and created and installed the basic dependencies of a new Hardhat project. The repository can be found here. This blog will be resumed in parts, due to my busy schedule, but we stopped at the following section for this post Hardhat: Creating a new Hardhat project.\nRead More:\nNext:\n To be updated.  ",
+  "wordCount" : "417",
+  "inLanguage": "en",
+  "datePublished": "2022-06-04T13:19:39+08:00",
+  "dateModified": "2022-06-04T13:19:39+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Kenywil Tiu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kenywil Tiu Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.kenywil.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.kenywil.com" accesskey="h" title="Kenywil Tiu Blog (Alt + H)">Kenywil Tiu Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup
+    </h1>
+    <div class="post-description">
+      Upskill 2: Practical research on backend Solidity framework Hardhat
+    </div>
+    <div class="post-meta"><span title='2022-06-04 13:19:39 +0800 +08'>June 4, 2022</span>&nbsp;·&nbsp;Kenywil Tiu
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>       I some practical experience with Solidity already, and was recommended by one of my colleague to try to supplement my knowledge with the Hardhat framework. I checked it out and would like to try it out and create a basic working smart contract. I will be following the official document of Hardhat found <a href="https://hardhat.org/tutorial/">here</a>.</p>
+<h1 id="hardhat-concepts">Hardhat Concepts<a hidden class="anchor" aria-hidden="true" href="#hardhat-concepts">#</a></h1>
+<p>       Hardhat is composed of the following concepts.</p>
+<ul>
+<li>Tasks: There are commands that can be ran on the terminal, some are provided by Hardhat upon install (e.g. <code>npx hardhat compile</code>). To find out the list of tasks use the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx hardhat help <span style="color:#f92672">[</span>task<span style="color:#f92672">]</span>
+</span></span></code></pre></div><ul>
+<li>Plugins: Tools that can be integrated to Hardhat. Examples of these are &rsquo;ethers.js&rsquo; and &lsquo;waffle&rsquo;.
+<ul>
+<li>List of plugins can be found here: <a href="https://hardhat.org/plugins">Hardhat Plugins</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="steps">Steps<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h1>
+<h2 id="prerequisite">Prerequisite<a hidden class="anchor" aria-hidden="true" href="#prerequisite">#</a></h2>
+<ul>
+<li>NodeJS 12+</li>
+<li>NPM (Should have been installed with NodeJS)</li>
+</ul>
+<h2 id="github-setup">Github Setup<a hidden class="anchor" aria-hidden="true" href="#github-setup">#</a></h2>
+<ol>
+<li>I have created a new repository on my Github account, it can be found <a href="https://github.com/tiukenywil11/hardhat-demo">here</a>.</li>
+<li>Opened Git bash, then used the following commands.</li>
+</ol>
+<ul>
+<li>Cloned the repository to my local machine.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/tiukenywil11/hardhat-demo.git
+</span></span></code></pre></div><ul>
+<li>Navigated to the project.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd hardhat-demo
+</span></span></code></pre></div><ul>
+<li>Opened project via VS Code.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code . 
+</span></span></code></pre></div><h2 id="environment-setup">Environment Setup<a hidden class="anchor" aria-hidden="true" href="#environment-setup">#</a></h2>
+<ol>
+<li>Open a terminal on VSCode using the following keyboard shortcut <code>CTRL + SHIFT + ~</code>.</li>
+<li>Install Hardhat dependencies using NPM (Node Package Manager).</li>
+</ol>
+<ul>
+<li>Initialize a node project.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm init
+</span></span></code></pre></div><ul>
+<li>(Optional) Fill up the details after the command</li>
+<li>Install Hardhat to the <em>dev environment</em> (Inside project directory only).</li>
+</ul>
+<pre tabindex="0"><code>npm install --save-dev hardhat
+</code></pre><ol start="3">
+<li>Create a Hardhat config file.</li>
+</ol>
+<ul>
+<li>Run the following command to run hardhat on terminal.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx hardhat
+</span></span></code></pre></div><ul>
+<li>Choose the option &lsquo;Create an empty hardhat.config.js&rsquo;. This will create a &lsquo;hardhat.config.js&rsquo; on the same directory as your &lsquo;package.json&rsquo;.</li>
+</ul>
+<h2 id="installing-plugins">Installing plugins<a hidden class="anchor" aria-hidden="true" href="#installing-plugins">#</a></h2>
+<ol>
+<li>Install the following plugins.</li>
+</ol>
+<ul>
+<li><strong><a href="https://hardhat.org/plugins/nomiclabs-hardhat-ethers">Ethers.js</a></strong>: Used to help interact with the Ethereum blockchain.</li>
+<li><strong><a href="https://hardhat.org/plugins/nomiclabs-hardhat-waffle">Waffle</a></strong>: Used to build smart contracts.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+</span></span></code></pre></div><ol start="2">
+<li>Add Installed dependency on <code>hardhat.config.js</code>, this should be added on first line of the file. (Adding &lsquo;Ethers.js&rsquo; is not necessary, because &lsquo;Waffle&rsquo; already calls &lsquo;Ethers.js&rsquo;)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;@nomiclabs/hardhat-waffle&#34;</span>);
+</span></span></code></pre></div><h2 id="saving-changes-to-github">Saving changes to Github.<a hidden class="anchor" aria-hidden="true" href="#saving-changes-to-github">#</a></h2>
+<ol>
+<li>Commited changes to Github repository.</li>
+</ol>
+<pre tabindex="0"><code>git add .
+git commit -m &#34;Part 1: Environment setup, and base hardhat config&#34;
+git push
+</code></pre><h1 id="outro">Outro<a hidden class="anchor" aria-hidden="true" href="#outro">#</a></h1>
+<p>       So with this, we have already set up the environment for Hardhat, and created and installed the basic dependencies of a new Hardhat project. The repository can be found <a href="https://github.com/tiukenywil11/hardhat-demo/commit/96a6288c690860398c80a52d6998446cad8a7000">here</a>. This blog will be resumed in parts, due to my busy schedule, but we stopped at the following section for this post <a href="https://hardhat.org/tutorial/creating-a-new-hardhat-project">Hardhat: Creating a new Hardhat project</a>.</p>
+<p><strong>Read More:</strong><br>
+Next:</p>
+<ul>
+<li>To be updated.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.kenywil.com/tags/upskill/">upskill</a></li>
+      <li><a href="https://www.kenywil.com/tags/hardhat/">hardhat</a></li>
+      <li><a href="https://www.kenywil.com/tags/solidity/">solidity</a></li>
+      <li><a href="https://www.kenywil.com/tags/smart-contract/">smart contract</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://www.kenywil.com">Kenywil Tiu Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

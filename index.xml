@@ -6,7 +6,16 @@
     <description>Recent content on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 May 2022 11:36:43 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jun 2022 13:19:39 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup</title>
+      <link>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/</link>
+      <pubDate>Sat, 04 Jun 2022 13:19:39 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/</guid>
+      <description>Upskill 2: Practical research on backend Solidity framework Hardhat</description>
+    </item>
+    
     <item>
       <title>Project Idea 1 (Decentralized Portfolio): Part 6</title>
       <link>https://www.kenywil.com/posts/project-idea-1-part-6/</link>
@@ -26,12 +35,12 @@
     </item>
     
     <item>
-      <title>Upskill 1 (Nodejs): Practical</title>
-      <link>https://www.kenywil.com/posts/upskill-1-nodejs-practical/</link>
+      <title>Upskill 1 (Nodejs &#43; Swagger): Practical</title>
+      <link>https://www.kenywil.com/posts/upskill-1-nodejs-swagger-practical/</link>
       <pubDate>Sat, 07 May 2022 11:41:55 +0800</pubDate>
       
-      <guid>https://www.kenywil.com/posts/upskill-1-nodejs-practical/</guid>
-      <description>Upskill 1: Practical research on backend Javascript framework NodeJS</description>
+      <guid>https://www.kenywil.com/posts/upskill-1-nodejs-swagger-practical/</guid>
+      <description>Upskill 1: Practical research on backend Javascript framework NodeJS with Swagger</description>
     </item>
     
     <item>

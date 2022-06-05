@@ -6,7 +6,16 @@
     <description>Recent content in smart contract on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 13:19:39 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 12:52:13 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upskill 2 Part 2 (Hardhat): Smart Contract Compiling</title>
+      <link>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-2/</link>
+      <pubDate>Sun, 05 Jun 2022 12:52:13 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-2/</guid>
+      <description>Upskill 2: Practical research on backend Solidity framework Hardhat</description>
+    </item>
+    
     <item>
       <title>Upskill 2 Part 1 (Hardhat): Concepts &amp; Setup</title>
       <link>https://www.kenywil.com/posts/upskill-2-hardhat-practical-part-1/</link>

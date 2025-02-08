@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kenywil.com/tags/ai-model/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/cursor/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/full-stack/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/project-idea/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/posts/project-idea-2-introduction/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/python/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kenywil.com/tags/</loc>
+    <lastmod>2025-02-08T15:44:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kenywil.com/tags/blockchain/</loc>
     <lastmod>2022-11-18T10:12:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kenywil.com/tags/hackathon/</loc>
-    <lastmod>2022-11-18T10:12:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/</loc>
     <lastmod>2022-11-18T10:12:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -27,17 +67,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kenywil.com/posts/</loc>
-    <lastmod>2022-11-18T10:12:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kenywil.com/tags/smart-contract/</loc>
-    <lastmod>2022-11-18T10:12:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/</loc>
     <lastmod>2022-11-18T10:12:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -98,11 +128,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kenywil.com/tags/decentralized-portfolio/</loc>
-    <lastmod>2022-05-22T11:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kenywil.com/tags/full-stack/</loc>
     <lastmod>2022-05-22T11:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

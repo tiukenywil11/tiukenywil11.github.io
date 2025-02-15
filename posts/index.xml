@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Kenywil Tiu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2025 15:44:50 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 16:55:01 +0800</lastBuildDate><atom:link href="https://www.kenywil.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project Idea 2 (AI Model): CRUD API</title>
+      <link>https://www.kenywil.com/posts/project-idea-2-part-1/</link>
+      <pubDate>Sat, 15 Feb 2025 16:55:01 +0800</pubDate>
+      
+      <guid>https://www.kenywil.com/posts/project-idea-2-part-1/</guid>
+      <description>Exploring the development of a simple AI model related to nutrition using an AI-powered IDE.</description>
+    </item>
+    
     <item>
       <title>Project Idea 2 (AI Model): Introduction</title>
       <link>https://www.kenywil.com/posts/project-idea-2-introduction/</link>
